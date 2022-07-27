@@ -1,0 +1,18 @@
+@font-face {
+    font-family: CeraPro-Regular;
+    src: url('../fonts/CeraProRegular.ttf');
+}
+  
+@font-face {
+    font-family: CeraPro-Medium;
+    src: url('../fonts//CeraProMedium.ttf');
+}
+  
+@font-face {
+    font-family: CeraPro-Bold;
+    src: url('../fonts/CeraProBold.ttf');
+}
+  
+body {
+    font-family: CeraPro-Regular;
+}

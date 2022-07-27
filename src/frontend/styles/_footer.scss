@@ -1,0 +1,179 @@
+.footer {
+    position: relative;
+
+    &__description {
+        font-size: 16px;
+        font-weight: 500;
+        color: $color-black;
+    }
+    
+    .footer-1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $color-green-light-2;
+        padding: 2rem;
+
+        .location-img {
+            padding-top: .5rem;
+        }
+
+        .logo, 
+        .location, 
+        .email, 
+        .call {
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-items: center;
+           
+            &__img {
+                padding: 1.2rem;
+                padding-right: .3rem;
+            }
+    
+            &__title {
+                color: $color-green;
+                font-weight: 900;
+                font-size: 20px;
+                text-transform: uppercase;
+                
+                justify-content: center;
+                align-items: center;
+                display: flex;
+            }
+        }
+
+        .email img,
+        .location img, 
+        .call img {
+            padding: .2rem;
+        }
+    }
+
+    .footer-2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        padding: 2rem;
+
+        .nav__list {
+            list-style: none;
+            padding-bottom:.5rem ;
+        }
+
+        .nav__link {
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+
+            color: $color-black;
+
+            &:hover {
+                color: $color-rose;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+        }
+
+        .nav__link-bold {
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            color: $color-black;
+        }
+
+        &__text {
+            text-align: center;
+            padding: 2rem;
+            font-size: 16px;
+            color: $color-black;
+            font-weight: 500;
+        } 
+    }
+
+    .social__icons{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .footer__description {
+        font-size: 14px;
+    }
+
+    .footer .footer-2__text {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 820px) {
+
+    .footer .footer-1 .logo__img {
+        padding: 0; 
+        padding-right: 0.3rem;
+    }
+
+    .logo__title {
+        font-size: 18px;
+    }
+
+    .footer .footer-1 {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer .footer-1 .logo,
+    .footer .footer-1 .location,
+    .footer .footer-1 .email,
+    .footer .footer-1 .call {
+        padding-bottom: 0.8rem;
+    }
+
+    .footer .footer-1 .location-img {
+         padding-top: 0; 
+    }
+
+    .footer .footer-2 {
+        padding: 1rem;
+    }
+
+    .footer .footer-2 .nav__link-bold {
+        font-size: 14px;
+    }
+
+    .footer .footer-2 .nav__link {
+        font-size: 14px;
+    }
+
+    .social__icons{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .footer .footer-2 .nav__link {
+        padding-bottom: 1rem;
+    }
+    
+    .footer .footer-2 {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .social__icons {
+        flex-direction: row;
+    }
+
+    .footer .footer-2__text {
+        font-size: 12px;
+    }
+}
+

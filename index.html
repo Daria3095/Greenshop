@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenshop</title>
+
+    <link rel="shortcut icon" href="./src/frontend/image/icon/Vector.png" type="image/x-icon">
+  
+    <link rel="apple-touch-icon" href="vector.png">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <link rel="stylesheet" href="./src/frontend/styles/font.css">
+  
+    <link rel="stylesheet" href="./src/frontend/styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
+
+</head>
+<body>
+  
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__container container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="./src/frontend/image/icon/Vector.png" class="logo__img" alt="image"> 
+                        <h3 class="logo__title">Greenshop</h3>
+                    </div>
+
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./card.html" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Plant Care</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
+                    </ul>
+                    
+                    <div class="header__icons">
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+
+                        <div class="header__icon">
+                             <div class="header__search"> 
+                                <div class="search-form">
+                                    <input class="search-text" type="text" name="" placeholder="Search">
+                                    <a class="search-btn" href="#">
+                                        <img class="search-image" src="./src/frontend/image/icon/search.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="header__busket">
+                                <a href="./Product.html" class="btn-busket"></a>
+                            </div>
+
+                            <div class="header__login">
+                                <a href="#" class="btn-login"></a>
+                            </div>
+
+                            <div class="btn__green-login">
+                                <a href="#" class="text-btn"><img class="icon__login" src="./src/frontend/image/icon/Logout_white.png" alt="image">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+  </header>
+
+  <main class="page container">
+        <section class="landing__banner banner">
+            <div class="banner__landing">
+                <video autoplay loop muted plays-inline class="back-video">
+                    <source src="./src/frontend/video/Прорастание растений - Time lapse.mp4" type="video/mp4">
+                </video>
+
+                <div class="banner__card"> 
+                    <div class="title">
+                        <span class="block"></span>
+                        <h4 class="banner__description-1">Welcome to GreenShop<span></span></h4>
+                    </div>
+                    
+                    <h1 class="banner__title">Let's Make a Better <span class="banner__title-green">Planet</span></h1>
+
+                    <h5 class="banner__description-2">
+                        <span>We are an online plant shop offering a wide range of cheap and trendy</span>
+                        <span>plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</span>
+                    </h5>
+
+                    <button class="btn__green">
+                        <a href="#" class="text-btn">Shop Now</a>
+                    </button>
+                </div>
+            </div> 
+     </section>
+
+        <section class="card">  
+            <div class="filters-checkbox container">    
+                <form class="form">
+                    <div class="multiselect">
+                        <div class="selectBox" onclick="showCheckboxes0()">
+                            <select>
+                                <option>Cattegories</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+                        <div id="checkboxes0">
+                            <label for="one">
+                                <input class="checkboxes" type="checkbox" id="one"/>House Plants (33)</label>
+                            <label for="two">
+                                <input class="checkboxes" type="checkbox" id="two"/>Potter Plants (12)</label>
+                            <label for="three">
+                                <input class="checkboxes" type="checkbox" id="three"/>Seeds (65)</label>
+                            <label for="four">
+                                <input class="checkboxes" type="checkbox" id="four"/>Small Plants (39)</label>
+                            <label for="five">
+                                <input class="checkboxes" type="checkbox" id="five"/>Big Plants (23)</label>
+                            <label for="six">
+                                <input class="checkboxes" type="checkbox" id="six"/>Succulents (17)</label>
+                            <label for="seven">
+                                <input class="checkboxes" type="checkbox" id="seven"/>Trerrariums (19)</label>
+                            <label for="eight">
+                                <input class="checkboxes" type="checkbox" id="eight"/>Gardening (13)</label>
+                            <label for="nine">
+                                <input class="checkboxes" type="checkbox" id="nine"/>Accessories (18)</label>
+                        </div>
+                    </div>
+
+                    <div class="multiselect">
+                        <div class="selectBox" onclick="showCheckboxes()">
+                            <select>
+                                <option>Size</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+                        <div id="checkboxes">
+                            <label for="one">
+                                <input class="checkboxes" type="checkbox" id="one"/>Small (119)</label>
+                            <label for="two">
+                                <input class="checkboxes" type="checkbox" id="two"/>Medium (86)</label>
+                            <label for="three">
+                                <input class="checkboxes" type="checkbox" id="three"/>Large (78)</label>
+                        </div>
+                    </div>
+
+                    <div class="multiselect">
+                        <div class="selectBox" onclick="showCheckboxes1()">
+                            <select>
+                                <option>Price Range</option>
+                            </select>
+                            <div class="overSelect"></div>
+                        </div>
+
+                        <p class="slider-text">Use slider or enter min and max price</p>
+
+                        <div class="price-input">
+                            <div class="field">
+                                <span>Min</span>
+                                <input type="number" class="input-min" value="0">
+                            </div>
+                            <div class="separator">-</div>
+                            <div class="field">
+                                <span>Max</span>
+                                <input type="number" class="input-max" value="2500">
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="range-input">
+                            <input type="range" class="range-min" min="0" max="2500" value="0" step="100">
+                            <input type="range" class="range-max" min="0" max="2500" value="2500" step="100">
+
+                        </div>
+                        
+                    </div>
+                   
+                </form>
+
+                <img class="commercial-img" src="./src/frontend/image/advertisement.png" alt="Picture">
+          </div> 
+
+            <div class="card__body">
+
+                <div class="card__menu">
+
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <li class="nav-item-2"><a href="#All">All Plants</a></li>
+                          <li class="nav-item-2"><a href="#New">New Arrivals</a></li>
+                          <li class="nav-item-2"><a href="#Sale">Sale</a></li>
+                        </div>
+                    </div>
+
+
+                    <ul class="menu">
+                        <li class="nav-item-2"><a href="#" class="nav-link-2">All Plants</a></li>
+                        <li class="nav-item-2"><a href="#" class="nav-link-2">New Arrivals</a></li>
+                        <li class="nav-item-2"><a href="#" class="nav-link-2">Sale</a></li>
+                    </ul>   
+
+                    <div class="list-down">
+                        <p class="list-down__text">Short by:</p>
+                    
+                        <select class="lists-down">
+                            <option selected>Default sorting</option>
+                        </select>
+                    </div> 
+  
+                </div> 
+
+                <div class="card__row">  
+
+                    <div class="card__image">
+                        <img class="card-img" src="./src/frontend/image/card_1.png" alt="Picture">
+                    </div>
+
+                    <div class="card__description">
+
+                        <div class="card__about">
+                            <p class="card__name">Barberton Daisy</p>
+                            <span class="card__price">$119.00</span>
+                        </div> 
+                        
+                        <div class="form__item">
+                            <div class="rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">4</div>
+                            </div>
+                        </div>
+
+                        <button class="btn__green-light">
+                            <a href="#" class="text-btn__green">Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card__row">
+                    <div class="card__image">
+                        <img class="card-img" src="./src/frontend/image/card_2.png" alt="Picture">
+                    </div>
+
+                    <div class="card__description">
+                        <div class="card__about">
+                            <p class="card__name">Angel Wing Begonia</p>
+                            <span class="card__price">$169.00</span>                           
+                        </div>  
+                        
+                        <div class="form__item">
+                            <div class="rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">4.5</div>
+                            </div>
+                        </div>
+
+                        <button class="btn__green-light">
+                            <a href="#" class="text-btn__green">Add to Cart</a>
+                        </button>
+
+                    </div>
+                    
+                </div>
+
+                <div class="card__row">
+
+                    <div class="card__sell">
+                        <p class="sell-off">13% sell off</p>
+                    </div>
+
+                    <div class="card__image">
+                        <img class="card-img" src="./src/frontend/image/card_3.png" alt="Picture">
+                    </div>
+                    
+                    <div class="card__description">
+                        <div class="card__about-1">
+
+                            <p class="card__name">African Violet</p>
+                        
+                            <div class="card__link-1"> 
+                                <span class="card__price">$199.00</span>
+                                <span class="card__price-1">$229.00</span>
+                            </div> 
+                        </div>    
+                        
+                        <div class="form__item">
+                            <div class="rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">4.8</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn__green-light">
+                            <a href="#" class="text-btn__green">Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card__row">
+                    <div class="card__image">
+                        <img class="card-img" src="./src/frontend/image/card_4.png" alt="Picture">
+                    </div>
+
+                    <div class="card__description">
+                        <div class="card__about">
+                            <p class="card__name">Beach Spider Lily</p>
+                            <span class="card__price">$129.00</span>
+                        </div>  
+
+                        <div class="form__item">
+                            <div class="rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">4.5</div>
+                            </div>
+                        </div>
+
+                        <button class="btn__green-light">
+                            <a href="#" class="text-btn__green">Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card__row">
+                    <div class="card__image">
+                        <img class="card-img" src="./src/frontend/image/card_5.png" alt="Picture">
+                    </div>
+
+                    <div class="card__description">
+                        <div class="card__about">
+                            <p class="card__name">Blushing Bromeliad</p>
+                            <span class="card__price">$139.00</span> 
+                        </div>  
+
+                        <div class="form__item">
+                            <div class="rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">4.9</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn__green-light">
+                            <a href="#" class="text-btn__green">Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card__row">
+                    <div class="card__image">
+                        <img class="card-img" src="./src/frontend/image/card_6.png" alt="Picture">
+                    </div>
+
+                    <div class="card__description">
+                        <div class="card__about">
+                            <p class="card__name">Aluminum Plant</p>
+                            <span class="card__price">$179.00</span>
+                        </div>   
+
+                        <div class="form__item">
+                            <div class="rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">4.1</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn__green-light">
+                            <a href="#" class="text-btn__green">Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card__row">
+                    <div class="card__image">
+                        <img class="card-img" src="./src/frontend/image/card_7.png" alt="Picture">
+                    </div>
+
+                    <div class="card__description">
+                        <div class="card__about">
+                            <p class="card__name">Bird's Nest Fern</p>
+                            <span class="card__price">$99.00</span> 
+                        </div>    
+                        
+                        <div class="form__item">
+                            <div class="rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">3.5</div>
+                            </div>
+                        </div>
+
+                        <button class="btn__green-light">
+                            <a href="#" class="text-btn__green">Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card__row">
+                    <div class="card__image">
+                        <img class="card-img" src="./src/frontend/image/card_8.png" alt="Picture">
+                    </div>
+
+                    <div class="card__description">
+                        <div class="card__about">
+                            <p class="card__name">Broadleaf Lady Palm</p>
+                            <span class="card__price">$59.00</span> 
+                        </div> 
+
+                        <div class="form__item">
+                            <div class="rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">5</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn__green-light">
+                            <a href="#" class="text-btn__green">Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card__row">
+                    <div class="card__banner">
+                        <img class="card-img" src="./src/frontend/image/card_9.png" alt="Picture">
+                    </div>
+
+                    <div class="card__description">
+                        <div class="card__about">
+                            <p class="card__name">Chinese Evergreen</p>
+                            <span class="card__price">$39.00</span>
+                        </div>  
+                        
+                        <div class="form__item">
+                            <div class="rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">4.2</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn__green-light">
+                            <a href="#" class="text-btn__green">Add to Cart</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="paginative-number">
+                    <ul class="pagination">
+                        <li class="page"><a class="active" href="#">1</a></li>
+                        <li class="page"><a href="#">2</a></li>
+                        <li class="page"><a href="#">3</a></li>
+                        <li class="page"><a href="#">4</a></li>
+                        <li class="page"><a href="#">></a></li>
+                    </ul> 
+                </div>
+            </div>
+     </section> 
+
+        <section class="card-gallery" id="">
+          
+            <div class="gallery">
+              <div class="gallery__body">
+                    <div class="gallery__row">
+                        <div class="gallery__image">
+                            <img src="./src/frontend/image/image_12.png">
+                        </div>
+
+                        <div class="gallery__text">
+                            <h2 class="gallery__title">Summer cactus & <br>succulents</h2>
+                            <p class="gallery__description">We are an online plant shop offering a wide range of cheap and trendy plants</p>
+
+                            <div class="gallery__link">
+                                <button class="btn__green">
+                                    <a href="#" class="text-btn">Find More</a>
+                                </button>
+                            </div>
+                        </div>   
+                    </div>
+            
+                    <div class="gallery__row">
+                        <div class="gallery__image">
+                            <img src="./src/frontend/image/card_10.png">
+                        </div>
+
+                    <div class="gallery__text">
+                            <h2 class="gallery__title">Styling Trends & <br>much more</h2>
+                            <p class="gallery__description">We are an online plant shop offering a wide range of cheap and trendy plants
+                                
+                            </p>
+
+                            <div class="gallery__link">
+                                <button class="btn__green">
+                                    <a href="#" class="text-btn">Find More</a>
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+             </div>
+         </div>
+     </section> 
+
+      <section class="card-blog">
+            <h1 class="card-blog__title">Our Blog Posts</h1>
+            <p class="card-blog__text">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+          
+            <div class="blog">
+              <div class="blog__body">
+                 <div class="blog__row">
+                        <div class="blog__image">
+                            <img src="./src/frontend/image/image_8.png">
+                        </div>
+
+                        <div class="blog__text">
+                            <p class="blog__name">September 12 | Read in 6 minutes</p>
+                            <h2 class="blog__title">Cactus & Succulent <br>Care Tips</h2>
+                            <p class="blog__description">Cacti are succulents are easy care plants for any home or patio.</p>
+                        </div>
+                        
+                        <div class="blog__link">
+                            <a href="#" class="btn__link">Learn More</a>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="blog__row">
+
+                        <div class="blog__image">
+                            <img src="./src/frontend/image/image_9.png">
+                        </div> 
+
+                        <p class="blog__name">September 13 | Read in 2 minutes</p>
+                        <h2 class="blog__title">Top 10 Succulents for<br> Your Home</h2>
+                        <p class="blog__description">Best in hanging baskets. Prefers medium to high light.</p>
+
+                        <div class="blog__link">
+                            <a href="#" class="btn__link">Learn More</a>
+                        </div>
+                    </div> 
+
+                    <div class="blog__row">
+
+                        <div class="blog__image">
+                            <img src="./src/frontend/image/image_10.png">
+                        </div>
+
+                        <p class="blog__name">September 15 | Read in 3 minutes</p>
+                        <h2 class="blog__title">Cacti & Succulent<br> Care Tips</h2>
+                        <p class="blog__description">Cacti and succulents thrive in containers and because most are.</p>
+
+                        <div class="blog__link">
+                            <a href="#" class="btn__link">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="blog__row">
+
+                        <div class="blog__image">
+                            <img src="./src/frontend/image/image_11.png">
+                        </div>
+
+                        <p class="blog__name">September 15 | Read in 2 minutes</p>
+                        <h2 class="blog__title">Best Houseplants <br>Room by Room</h2>
+                        <p class="blog__description">The benefits of houseplants are endless. In addition to.</p>
+
+                        <div class="blog__link">
+                            <a href="#" class="btn__link">Learn More</a>
+                        </div>
+                    </div> 
+                </div>
+           </div>
+     </section>
+
+        <section class="card-icon">
+
+            <div class="card-icon__body">
+            
+                <div class="card-icon__row">
+
+                    <img src="./src/frontend/image/icon/flowers_1.png">
+
+                    <div class="card-icon__text">
+                        <h2 class="card-icon__title">Garden Care</h2>
+                        <p class="card-icon__description">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                    </div>
+                </div>
+
+                <div class="card-icon__row">
+
+                    <img src="./src/frontend/image/icon/flowers_2.png">
+
+                    <div class="card-icon__text">
+                        <h2 class="card-icon__title">Plant Renovation</h2>
+                        <p class="card-icon__description">We are an online plant shop offering a wide range of cheap and trendy plants.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-icon__row">
+
+                    <img src="./src/frontend/image/icon/flowers_3.png">
+
+                    <div class="card-icon__text">
+                        <h2 class="card-icon__title">Watering Graden</h2>
+                        <p class="card-icon__description">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+                    </div>
+                </div>
+
+                <div class="card-icon__news">
+                    <h2 class="card-icon__title-1">Would you like to join newsletters?</h2>
+
+                    <div class="form-email">
+                        <input type="text" class="textbox" placeholder=" ">
+                        <label class="form-email__label">Email</label>
+                        <button class="btn__green-email">
+                            <a href="#" class="text-btn">Join</a>
+                        </button>
+                    </div>
+
+                    <p class="card-icon__description-1">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!</p> 
+                </div>
+            </div>         
+        </section>
+    </main>
+
+  <footer class="footer container">
+    <div class="footer-1">
+        <div class="logo">
+            <img src="./src/frontend/image/icon/Vector.png" class="logo__img" alt="image"> 
+            <h3 class="logo__title">Greenshop</h3>
+        </div>
+
+        <div class="location">
+            <div class="location-img">
+                <img src="./src/frontend/image/icon/location.png">
+            </div>
+            <p class="footer__description">
+                70 West Buckingham Ave.<br>Farmingdale, NY 11735
+            </p>
+        </div>
+
+        <div class="email">
+            <img src="./src/frontend/image/icon/sms.png">
+            <p class="footer__description">contact@greenshop.com</p>
+        </div>
+
+        <div class="call">
+            <img src="./src/frontend/image/icon/call.png">
+            <p class="footer__description">+88 01911 717 490</p>
+        </div>
+    </div>
+
+    <div class="footer-2">
+        <nav class="footer-2__nav">
+            <ul class="nav__lists">
+                <li class="nav__list"><a class="nav__link-bold" href="#">My Account</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">My Account</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Our stores</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Contact us</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Career</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Specials</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer-2__nav">
+            <ul class="nav__lists">
+                <li class="nav__list"><a class="nav__link-bold" href="#">Help & Guide</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Help Center</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">How to Buy</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Shipping & Dellvery</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Product Policy</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">How to Return</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer-2__nav">
+            <ul class="nav__lists">
+                <li class="nav__list"><a class="nav__link-bold" href="#">Categories</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">House Plants</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Potter Plants</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Seeds</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Small Plants</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Accessories</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-2__media">
+            <li class="nav__list"><a class="nav__link-bold" href="#">Social Media</a></li>
+            <div class="social__icons">
+                <div class="social facebook">
+                    <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+                </div>
+                <div class="social instagram">
+                    <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+                <div class="social twitter">
+                    <a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                </div>
+                <div class="social linkedin">
+                    <a href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                </div>
+                <div class="social youtube">
+                    <a href="#" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer-2__text">© 2021 GreenShop. All Rights Reserved.</p>
+
+  </footer>
+  
+
+  <script src="./src/frontend/js/humburger.js"></script>
+  <script src="./src/frontend/js/filters.js"></script>
+  <script src="./src/frontend/js/rating.js"></script>
+  <script src="./src/frontend/js/price-input.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./src/frontend/js/button-menu.js"></script>
+
+
+</body>
+
+
+
+</html>

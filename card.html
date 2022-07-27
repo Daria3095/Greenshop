@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <link rel="shortcut icon" href="./src/frontend/image/icon/Vector.png" type="image/x-icon">
+  
+    <link rel="apple-touch-icon" href="vector.png">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <link rel="stylesheet" href="./src/frontend/styles/font.css">
+  
+    <link rel="stylesheet" href="./src/frontend/styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+  
+
+
+</head>
+<body>
+  
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__container container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <img src="./src/frontend/image/icon/Vector.png" class="logo__img" alt="image"> 
+                        <h3 class="logo__title">Greenshop</h3>
+                    </div>
+
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Plant Care</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
+                    </ul>
+                    
+                    <div class="header__icons">
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+
+                        <div class="header__icon">
+                             <div class="header__search"> 
+                                <div class="search-form">
+                                    <input class="search-text" type="text" name="" placeholder="Search">
+                                    <a class="search-btn" href="#">
+                                        <img class="search-image" src="./src/frontend/image/icon/search.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="header__busket">
+                                <a href="./Product.html" class="btn-busket"></a>
+                            </div>
+
+                            <div class="header__login">
+                                <a href="#" class="btn-login"></a>
+                            </div>
+
+                            <div class="btn__green-login">
+                                <a href="#" class="text-btn"><img class="icon__login" src="./src/frontend/image/icon/Logout_white.png" alt="image">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+  </header>
+
+  <main class="page container">    
+        <section class="card-flower">
+            <p class="card-flower__text">Home / <span>Shop</span></p>
+
+            <div class="card-flower__body">
+                <div class="card-flower__min">
+                    <img src="./src/frontend/image/card-min_1.png" class="card-flower__img">
+                    <img src="./src/frontend/image/card-min_2.png" class="card-flower__img">
+                    <img src="./src/frontend/image/card-min_3.png" class="card-flower__img">
+                    <img src="./src/frontend/image/card-min_4.png" class="card-flower__img">
+                </div>
+
+                <div class="card-flower__product">
+                    <img src="./src/frontend/image/card-product.png">
+                </div>
+
+                
+                <div class="card-flower__about">
+                    <h2 class="card-flower__name">Barberton Daisy</h2>
+                    
+                    <div class="card-flower__text">
+                        <h3 class="card-flower__price">$119.00</h3>
+
+                        <div class="card-flower__raiting">
+                            <div class="form__item">
+                                <div class="rating rating_set">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__value">4</div>
+                                </div>
+                            </div>
+                            <p class="card-flower__value">19 Customer Review</p>
+                        </div>
+                    </div>
+
+                    <div class="card-flower__description">
+                        <div class="description-product">
+                            <h5 class="description__title">Short Description:</h5>
+                            <p class="description__text">The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
+                        </div>
+    
+                        <div class="card-flower__size">
+                            <h5 class="description__title">Size:</h5>
+                            <button type="button" class="btn__size">
+                                <span class="btn-size__text">S</span>
+                            </button>
+                            <button type="button" class="btn__size">
+                                <span class="btn-size__text">M</span>
+                            </button>
+                            <button type="button" class="btn__size">
+                                <span class="btn-size__text">L</span>
+                            </button>
+                            <button type="button" class="btn__size">
+                                <span class="btn-size__text">XL</span>
+                            </button>
+                        </div>
+
+                        <div class="card-flower__buttons">
+        
+                            <div class="card-flower__cash">
+                                <div class="items counter-wrapper">
+                                    <div class="items__control" data-action="minus">-</div>
+                                    <div class="items__current" data-counter="">1</div>
+                                    <div class="items__control" data-action="plus">+</div>
+                                </div>
+                            </div>
+
+                            <button class="btn__green-card">
+                                <a href="#" class="text-btn__green">Buy Now</a>
+                            </button>
+
+                            <button class="btn__green-light">
+                                <a href="#" class="text-btn__green">Add to Cart</a>
+                            </button>
+
+                            <a href="javascript:void(0);" class="like-button">
+                                <i class="material-icons not-liked bouncy">favorite_border</i>
+                                <i class="material-icons is-liked bouncy">favorite</i>
+                                <span class="like-overlay"></span>
+                            </a>
+
+                        </div>
+
+                        <div class="card-flower__other">
+                            <p class="description__text"><span>SKU:</span> 1995751877966</p>
+                            <p class="description__text"><span>Categories:</span> Potter Plants</p>
+                            <p class="description__text"><span>Tags:</span> Home, Garden, Plants</p>
+                            <h5 class="description__title">Share this products:</h5>
+                            
+                            <div class="social-2__icons">
+                                <div class="social-2 instagram-2">
+                                    <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                                </div>
+                                <div class="social-2 facebook-2">
+                                    <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+                                </div>
+                                <div class="social-2 vk">
+                                    <a href="#" target="_blank"><i class="fa fa-vk fa-2x"></i></a>    
+                                </div>
+                                <div class="social-2 telegram">
+                                    <a href="#" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="About-product">
+
+            <div class="about-product__menu">
+                <ul class="menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Product Description</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Video Overview</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Reviews (19)</a></li>
+                </ul>
+            </div> 
+
+            <div class="about-product__description">
+                <p class="description__text">
+                    The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.
+                </p>
+                <br>
+                <p class="description__text">Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.</p>
+                <br>
+                <h5 class="description__title">Living Room:</h5>
+                <p class="description__text">The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <br>
+                <h5 class="description__title">Dining Room:</h5>
+                <p class="description__text">The benefits of houseplants are endless. In addition to cleaning the air of harmful toxins, they can help to improve your mood, reduce stress and provide you with better sleep. Fill every room of your home with houseplants and their restorative qualities will improve your life.</p>
+                <br>
+                <h5 class="description__title">Office:</h5>
+                <p class="description__text">The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </section>
+
+        
+        <section class="review">
+            <h2 class="card-reviews__text-green">Reviews of other products</h2>
+            <div class="card-reviews">
+                <ul class="card-reviews__body">
+                    <li>
+                        <a href="" class="card-reviews__row">
+                            <img src="./src/frontend/image/gallery (18).png" class="card__image" alt="">
+                            <div class="card__overlay">
+                                <div class="card-reviews__header">                  
+                                    <img class="card-reviews__thumb" src="./src/frontend/image/avatar  (1).jpg" alt="">
+                                    <div class="card-reviews__header-text">
+                                        <h3 class="card-reviews__title">Jessica Parker</h3>            
+                                        <span class="card-reviews__status">1 hour ago</span>
+                                        <p class="card-reviews__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </a>      
+                    </li>
+
+                    <li>
+                        <a href="" class="card-reviews__row">
+                            <img src="./src/frontend/image/gallery (14).jpg" class="card__image" alt="">
+                            <div class="card__overlay">
+                                <div class="card-reviews__header">                  
+                                    <img class="card-reviews__thumb" src="./src/frontend/image/avatar  (3).jpg" alt="">
+                                    <div class="card-reviews__header-text">
+                                        <h3 class="card-reviews__title">Kim kardashian </h3>            
+                                        <span class="card-reviews__status">3 hour ago</span>
+                                        <p class="card-reviews__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </a>      
+                    </li>
+
+                    <li>
+                        <a href="" class="card-reviews__row">
+                            <img src="./src/frontend/image/gallery (19).jpg" class="card__image" alt="">
+                            <div class="card__overlay">
+                                <div class="card-reviews__header">                  
+                                    <img class="card-reviews__thumb" src="./src/frontend/image/avatar  (2).jpg" alt="">
+                                    <div class="card-reviews__header-text">
+                                        <h3 class="card-reviews__title">Tom Hardy</h3>            
+                                        <span class="card-reviews__status">12 hour ago</span>
+                                        <p class="card-reviews__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </a>      
+                    </li>
+                </ul>
+          </div>
+        </section>
+
+        <section class="products">
+            <div class="products__slider">
+                <h2 class="slider-text__green">Releted Products</h2>
+
+                <div class="slider">
+                    <div class="slider__item filter">
+                        <img src="./src/frontend/image/card_8.png" alt="">
+                        <p class="description__text">Broadleaf Lady Palm</p>
+                        <p class="description__text-green">$59.00</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="./src/frontend/image/card_7.png" alt="">
+                        <p class="description__text">Bird's Nest Fern</p>
+                        <p class="description__text-green">$99.00</p>
+                    </div>
+                    <div class="slider__item filter">
+                        <img src="./src/frontend/image/card_6.png" alt="">
+                        <p class="description__text">Aluminum Plant</p>
+                        <p class="description__text-green">$79.00</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="./src/frontend/image/card_9.png" alt="">
+                        <p class="description__text">Chinese Evergreen</p>
+                        <p class="description__text-green">$39.00</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+        <section class="card-icon">
+
+            <div class="card-icon__body">
+            
+                <div class="card-icon__row">
+
+                    <img src="./src/frontend/image/icon/flowers_1.png">
+
+                    <h2 class="card-icon__title">Garden Care</h2>
+                    <p class="card-icon__description">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+        
+                </div>
+
+                <div class="card-icon__row">
+
+                    <img src="./src/frontend/image/icon/flowers_2.png">
+
+                    <h2 class="card-icon__title">Plant Renovation</h2>
+                    <p class="card-icon__description">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+        
+                </div>
+
+                <div class="card-icon__row">
+
+                    <img src="./src/frontend/image/icon/flowers_3.png">
+
+                    <h2 class="card-icon__title">Watering Graden</h2>
+                    <p class="card-icon__description">We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+        
+                </div>
+
+                <div class="card-icon__news">
+                    <h2 class="card-icon__title-1">Would you like to join newsletters?</h2>
+
+                    <div class="form-email">
+                        <input type="email" class="textbox" placeholder=" ">
+                        <label class="form-email__label">Email</label>
+                        <button class="btn__green-email">
+                            <a href="#" class="text-btn">Join</a>
+                        </button>
+                    </div>
+                    
+                    <p class="card-icon__description-1">We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours!</p> 
+                </div>
+            </div>         
+     </section>  
+ </main>
+
+  <footer class="footer container">
+    <div class="footer-1">
+        <div class="logo">
+            <img src="./src/frontend/image/icon/Vector.png" class="logo__img" alt="image"> 
+            <h3 class="logo__title">Greenshop</h3>
+        </div>
+
+        <div class="location">
+            <div class="location-img">
+                <img src="./src/frontend/image/icon/location.png">
+            </div>
+            <p class="footer__description">
+                70 West Buckingham Ave.<br>Farmingdale, NY 11735
+            </p>
+        </div>
+
+        <div class="email">
+            <img src="./src/frontend/image/icon/sms.png">
+            <p class="footer__description">contact@greenshop.com</p>
+        </div>
+
+        <div class="call">
+            <img src="./src/frontend/image/icon/call.png">
+            <p class="footer__description">+88 01911 717 490</p>
+        </div>
+    </div>
+
+    <div class="footer-2">
+        <nav class="footer-2__nav">
+            <ul class="nav__lists">
+                <li class="nav__list"><a class="nav__link-bold" href="#">My Account</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">My Account</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Our stores</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Contact us</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Career</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Specials</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer-2__nav">
+            <ul class="nav__lists">
+                <li class="nav__list"><a class="nav__link-bold" href="#">Help & Guide</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Help Center</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">How to Buy</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Shipping & Dellvery</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Product Policy</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">How to Return</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer-2__nav">
+            <ul class="nav__lists">
+                <li class="nav__list"><a class="nav__link-bold" href="#">Categories</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">House Plants</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Potter Plants</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Seeds</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Small Plants</a></li>
+                <li class="nav__list"><a class="nav__link" href="#">Accessories</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-2__media">
+            <li class="nav__list"><a class="nav__link-bold" href="#">Social Media</a></li>
+            
+                <div class="social__icons">
+                    <div class="social facebook">
+                        <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>    
+                    </div>
+                    <div class="social instagram">
+                        <a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                    <div class="social twitter">
+                        <a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                    </div>
+                    <div class="social linkedin">
+                        <a href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </div>
+                    <div class="social youtube">
+                        <a href="#" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer-2__text">© 2021 GreenShop. All Rights Reserved.</p>
+ </footer>
+  
+
+
+
+
+
+    <div class="header__banner banner">
+       
+    </div>
+
+  <script src="./src/frontend/js/humburger.js"></script>
+  <script src="./src/frontend/js/rating.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./src/frontend/js/button-like.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./src/frontend/js/slick.min.js"></script>
+  <script src="./src/frontend/js/slick_banner.js"></script>
+  <script src="./src/frontend/js/counter.js"></script>
+  
+
+
+  
+
+</body>
+
+
+
+</html>
